@@ -1,0 +1,74 @@
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+public class ControllerEvents : MonoBehavior
+{
+    public GameObject hand;
+    public GameObject otherHand;
+    public SteamVR_ControllerEvents controllerEvents = hand.GetComponent<SteamVR_ControllerEvents>();
+    public GestureEvents gestureEvents = hand.GetComponent<GestureEvents>(;
+    
+    
+    
+    public event ControllerInteractionEventHandler TriggerPressed = controllerEvents.TriggerPressed;
+    public event ControllerInteractionEventHandler TriggerReleased = controllerEvents.TriggerReleased;
+
+    public event ControllerInteractionEventHandler TriggerAxisChanged = controllerEvents.TriggerAxisChanged;
+
+    public event ControllerInteractionEventHandler ApplicationMenuPressed = controllerEvents.ApplicationMenuPressed;
+    public event ControllerInteractionEventHandler ApplicationMenuReleased = controllerEvents.ApplicationMenuReleased;
+
+    public event ControllerInteractionEventHandler GripPressed = controllerEvents.GripPressed;
+    public event ControllerInteractionEventHandler GripReleased = controllerEvents.GripReleased;
+
+    public event ControllerInteractionEventHandler TouchpadPressed = controllerEvents.TouchpadPressed;
+    public event ControllerInteractionEventHandler TouchpadReleased = controllerEvents.TouchpadReleased;
+
+    public event ControllerInteractionEventHandler TouchpadTouchStart = controllerEvents.TouchpadTouchStart;
+    public event ControllerInteractionEventHandler TouchpadTouchEnd = controllerEvents.TouchpadTouchEnd;
+
+    public event ControllerInteractionEventHandler TouchpadAxisChanged = controllerEvents.TouchpadAxisChanged;
+
+    public event ControllerInteractionEventHandler AliasPointerOn = controllerEvents.AliasPointerOn;
+    public event ControllerInteractionEventHandler AliasPointerOff = controllerEvents.AliasPointerOff;
+
+    public event ControllerInteractionEventHandler AliasGrabOn = controllerEvents.AliasGrabOn;
+    public event ControllerInteractionEventHandler AliasGrabOff = controllerEvents.AliasGrabOff;
+
+    public event ControllerInteractionEventHandler AliasUseOn = controllerEvents.AliasUseOn;
+    public event ControllerInteractionEventHandler AliasUseOff = controllerEvents.AliasUseOff;
+
+    public event ControllerInteractionEventHandler AliasMenuOn = controllerEvents.AliasMenuOn;
+    public event ControllerInteractionEventHandler AliasMenuOff = controllerEvents.AliasMenuOff;
+    
+    public event GestureEventHandler UpwardGesture = gestureEvents.UpwardGesture;
+    public event GestureEventHandler DownwardGesture = gestureEvents.DownwardGesture;
+    public event GestureEventHandler OutwardGesture = gestureEvents.OutwardGesture;
+    public event GestureEventHandler InwardGesture = gestureEvents.InwardGesture;
+    public event GestureEventHandler TwistGesture = gestureEvents.TwistGesture;
+    
+    public bool PalmUp()
+    {
+        if ((hand.name == "PlayerObject_Controller (right)") && hand.transform.eulerAngles.z > 180.0) {return true;}
+        else if ((hand.name == "PlayerObject_Controller (left)") && hand.transform.eulerAngles.z < 180.0) {return true;}
+        else{return false;}
+    }
+    
+    public bool NearGround()
+        float heightFactor = 10.0f;
+        if(hand.transform.y 
+    {
+    
+    }
+    
+    public bool AboveHead()
+    {
+    
+    }
+    
+    public float DistanceToOther()
+    {
+    
+    }
+}

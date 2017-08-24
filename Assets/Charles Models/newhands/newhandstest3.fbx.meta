@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: a5ad4ee5a19036b4d8df6277febc8611
+timeCreated: 1464691195
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Beta_HighLimbsGeo
+    100002: //RootNode
+    100004: RightHand
+    100006: RightHandIndex1
+    100008: RightHandIndex2
+    100010: RightHandIndex3
+    100012: RightHandIndex4
+    100014: RightHandMiddle1
+    100016: RightHandMiddle2
+    100018: RightHandMiddle3
+    100020: RightHandMiddle4
+    100022: RightHandPinky1
+    100024: RightHandPinky2
+    100026: RightHandPinky3
+    100028: RightHandPinky4
+    100030: RightHandRing1
+    100032: RightHandRing2
+    100034: RightHandRing3
+    100036: RightHandRing4
+    100038: RightHandThumb1
+    100040: RightHandThumb2
+    100042: RightHandThumb3
+    100044: RightHandThumb4
+    400000: Beta_HighLimbsGeo
+    400002: //RootNode
+    400004: RightHand
+    400006: RightHandIndex1
+    400008: RightHandIndex2
+    400010: RightHandIndex3
+    400012: RightHandIndex4
+    400014: RightHandMiddle1
+    400016: RightHandMiddle2
+    400018: RightHandMiddle3
+    400020: RightHandMiddle4
+    400022: RightHandPinky1
+    400024: RightHandPinky2
+    400026: RightHandPinky3
+    400028: RightHandPinky4
+    400030: RightHandRing1
+    400032: RightHandRing2
+    400034: RightHandRing3
+    400036: RightHandRing4
+    400038: RightHandThumb1
+    400040: RightHandThumb2
+    400042: RightHandThumb3
+    400044: RightHandThumb4
+    4300000: Beta_HighLimbsGeo
+    7400000: closehand
+    7400002: openhand
+    7400004: closehand
+    7400006: openhand
+    7400008: halfhand
+    9500000: //RootNode
+    13700000: Beta_HighLimbsGeo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: closehand
+      takeName: WIPHAND2
+      firstFrame: 40
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Beta_HighLimbsGeo
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: RightHand/RightHandIndex1
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: RightHand/RightHandMiddle1
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: RightHand/RightHandPinky1
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: RightHand/RightHandRing1
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: RightHand/RightHandThumb1
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: openhand
+      takeName: WIPHAND2
+      firstFrame: 45
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Beta_HighLimbsGeo
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: RightHand/RightHandIndex1
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: RightHand/RightHandMiddle1
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: RightHand/RightHandPinky1
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: RightHand/RightHandRing1
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: RightHand/RightHandThumb1
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: halfhand
+      takeName: WIPHAND2
+      firstFrame: 44
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Beta_HighLimbsGeo
+        weight: 1
+      - path: RightHand
+        weight: 1
+      - path: RightHand/RightHandIndex1
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
+        weight: 1
+      - path: RightHand/RightHandMiddle1
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
+        weight: 1
+      - path: RightHand/RightHandPinky1
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
+        weight: 1
+      - path: RightHand/RightHandRing1
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
+        weight: 1
+      - path: RightHand/RightHandThumb1
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

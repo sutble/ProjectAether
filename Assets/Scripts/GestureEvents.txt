@@ -1,0 +1,155 @@
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+public struct GestureEventArgs
+{
+    public uint controllerIndex;
+    public Vector3 velocity;
+    public Vector3 translation;
+    public Transform transform;
+}
+
+public struct QueueInfo
+{
+    public Transform transform;
+    public Vector3 velocity;
+}
+
+public delegate void GestureEventHandler(object sender, GestureEventArgs e);
+
+public class GestureEvents : MonoBehavior
+{
+	
+    public Queue<GestureInfo> transformQueue;
+    public int NUM_FRAMES = 50;
+  
+    private uint controllerIndex;
+    private SteamVR_TrackedObject trackedController;
+    private SteamVR_Controller.Device device;
+    
+    public event GestureEventHandler UpwardGesture;
+    public event GestureEventHandler DownwardGesture;
+    public event GestureEventHandler OutwardGesture;
+    public event GestureEventHandler InwardGesture;
+    public event GestureEventHandler TwistGesture;
+    
+    public Vector3 avgVelocity;
+
+    
+    public virtual void OnUpwardGesture(GestureEventArgs e)
+    {
+        if (UpwardGesture != null)
+            UpwardGesture(this, e);
+    }
+    
+    public virtual void OnDownwardGesture(GestureEventArgs e)
+    {
+        if (DownwardGesture != null)
+            DownwardGesture(this, e);
+    }
+    
+    public virtual void OnOutwardGesture(GestureEventArgs e)
+    {
+        if (OutwardGesture != null)
+            OutwardGesture(this, e);
+    }
+    
+    public virtual void OnInwardGesture(GestureEventArgs e)
+    {
+        if (InwardGesture != null)
+            InwardGesture(this, e);
+    }
+
+    
+    public virtual void OnTwistGesture(GestureEventArgs e)
+    {
+        if (TwistGesture != null)
+            TwistGesture(this, e);
+    }
+
+        
+    void Start(){
+        // init device
+        trackedController = GetComponent<SteamVR_TrackedObject>();
+        
+        // init queue
+        transformQueue = new Queue<Transform>()
+    }
+    
+
+
+    void Update(){
+        if(transformQueue.Count() < NUM_FRAMES){
+            transformQueue.Enqueue(SetGestureInfo(device.transform, device.velocity));
+        }
+        else{
+            transformQueue.Dequeue();
+            transformQueue.Enqueue(SetGestureInfo(device.transform, device.velocity));
+        }6
+        
+        
+        foreach(GestureInfo g in transformQueue){
+            avgVelocity += g.velocity;
+        }
+        
+        avgVelocity = avgVelocity / transformQueue.Count()
+        
+        
+        if (DidUpwardGesture())
+        {
+            OnUpwardGesture(SetGestureEvent(device.velocity, translationvariable???));
+        }
+        else if (DidDownwardGesture())
+        {
+            OnDownwardGesture(SetGestureEvent(device.velocity, translationvariable???));
+        }
+        
+        if (DidOutwardGesture())
+        {
+            OnOutwardGesture(SetGestureEvent(device.velocity, translationvariable???));
+        }
+        else if (DidInwardGesture())
+        {
+            OnInwardGesture(SetGestureEvent(device.velocity, translationvariable???));
+        }
+        
+        if (DidTwistGesture())
+        {
+            OnTwistGesture(SetGestureEvent(device.velocity, translationvariable???));
+        }
+        
+    }
+    
+    GestureInfo SetGestureInfo(Transform transform, Vector3 velocity)
+    {
+        GestureInfo g;
+        g.transform = transform;
+        g.velocity = velocity;
+        
+        return g;
+    }
+    
+    GestureEventArgs SetGestureEvent(Vector3 velocity, Vector3 translation)
+    {
+        GestureEventArgs e;
+        e.controllerIndex = controllerIndex;
+        e.velocity = velocity;
+        e.transform = this.gameObject.transform;
+        e.translation = translation;
+        
+        return e;
+    }
+    
+    bool DidInwardGesture() {
+        Vector3 outwardAxis = -this.gameObject.transform.up;
+        return (Vector3.Dot(outwardAxis , avgVelocity) < 0);
+    }
+    
+    bool DidOutwardGesture() {
+        Vector3 outwardAxis = -this.gameObject.transform.up;
+        return (Vector3.Dot(outwardAxis , avgVelocity) > 0);
+    }
+
+
+}
