@@ -1,6 +1,6 @@
 # Project Earthshaker
 
-This was a 
+Project Earthshaker is a VR Game that simulates environment manipulation through gestures. The user can summon rocks and boulders from the ground, and punch them at incoming archers. They can also raise pillars for blocking arrows, and if they are feeling particularly defensive, raise a wall.
 
 
 https://www.youtube.com/watch?v=Nu0dGT2FXRw
