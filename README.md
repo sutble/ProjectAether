@@ -5,6 +5,7 @@ Project Earthshaker is a VR Game that simulates environment manipulation through
 This project has gained a lot of interest on the internet, gaining over 50,000 views in the first week. We also demoed the game at PAX West to about 200 people. 
 
 https://www.youtube.com/watch?v=Nu0dGT2FXRw
+
 http://moreequalstudios.com/
 
 ![Alt text](https://user-images.githubusercontent.com/10662653/29693492-d00934d6-88ea-11e7-9874-e6ec609f6779.png  "Itunes Connect")
